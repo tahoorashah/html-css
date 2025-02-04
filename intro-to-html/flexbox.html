@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox prac</title>
+        <style>
+            
+        </style>
+    </head>
+    <body style="padding-bottom: 2000px;">
+        <div style="
+            display: flex;
+            flex-direction: row;
+            ">
+            <div style="background-color:
+             lightblue">div1  text </div>
+            <div style="background-color:
+             lightpink">div2<p>text</p></div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            ">
+            <div style="background-color:
+             lightblue; width:100px;">100px </div>
+            <div style="background-color:
+             lightpink; flex:1;">flex: 1</div>
+        </div>
+
+        <div style="
+           margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            border-width:1px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: center;
+            ">
+            <div style="background-color:
+             lightblue; width:100px;">100px </div>
+            <div style="background-color:
+             lightpink; width:100px;">100px</div>
+             <div style="background-color:
+             lightblue; width:100px;">100px </div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+         display: flex;
+         flex-direction: row;
+         height: 70px;
+         border-width:1px;
+         border-style: solid;
+         border-color: gray;
+         justify-content: space-between;
+         ">
+         <div style="background-color:
+          lightblue; width:100px;">100px </div>
+         <div style="background-color:
+          lightpink; width:100px;">100px</div>
+          <div style="background-color:
+          lightblue; width:100px;">100px </div>
+     </div>  
+
+     <div style="
+        margin-top: 30px;
+         display: flex;
+         flex-direction: row;
+         height: 70px;
+         border-width:1px;
+         border-style: solid;
+         border-color: gray;
+         justify-content: center;
+         align-items: center;
+         ">
+         <div style="background-color:
+          lightblue; width:100px;">100px </div>
+         <div style="background-color:
+          lightpink; width:100px;">100px</div>
+          <div style="background-color:
+          lightblue; width:100px;">100px </div>
+     </div>  
+    </body>
+</html>
+
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+<html>
+    <head>
+        <title></title>
+        <style>
+            p{
+           font-family:Roboto,arial;
+         }  
+       .search-bar{
+           font-family: times;
+           font-size: 18px;
+           margin-left: 12px;
+           margin-bottom: 10px;
+           display: block;
+           margin-top: 50px;
+       }
+           .thumb-new{
+           width: 100%;
+           }
+           .video-info-grid{
+              display: grid;
+              grid-template-columns: 50px 1fr;
+           }
+          .channel-pic{
+           width: 100%;
+           border-radius: 30px;
+          }
+          
+           .vid-title{
+               margin-top: 0px;
+               font-size: 14px;
+               font-weight: bold;
+               width:270px;
+               line-height: 18px;
+           }
+           .vid-author{
+               font-size: 13px;
+               color:rgb(96, 96, 96);
+               margin-bottom: 0;
+           }
+           .vid-stats{
+               font-size: 13px;
+               color:rgb(96, 96, 96);
+               margin-top: 4px;
+           }
+           .video-grid{
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             column-gap: 15px ;
+             row-gap:40px;
+           }
+           
+         </style>
+    </head>
+    <body>
+        <div class="header ">
+        <input class=search-bar type="text-box" placeholder="search ">
+        </div>
+      <div class="video-grid">
+
+        <div class="vid-preview">
+          <div>
+                <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+          </div>
+      <div class="video-info-grid"> 
+            <div>
+                <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+            </div> 
+          <div>
+            <p class="vid-title">
+            Talking Tech and AI with Google CEO Sundar Pichai! 
+            </p>
+            <p class="vid-author">
+            Marques Brownlee
+            </p> 
+            <p class="vid-stats">
+            3.4 Views &#183; 6 months 
+            </p>
+          </div>
+      </div>
+      </div>
+
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
+     <div>
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
+     </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
+     </div>
+  </div>
+ </div>
+    
+      <div class="vid-preview">
+        <div >
+          <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+        </div>
+     <div class="video-info-grid"> 
+         <div>
+      <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+      </div> 
+    <div>
+     <p class="vid-title">
+      Talking Tech and AI with Google CEO Sundar Pichai! 
+     </p>
+    <p class="vid-author">
+     Marques Brownlee
+    </p> 
+    <p class="vid-stats">
+     3.4 Views &#183; 6 months 
+    </p>
+ </div>
+ </div>
+ </div>
+
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
+     <div>
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
+     </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
+     </div>
+  </div>
+ </div>
+    
+      <div class="vid-preview">
+        <div >
+          <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+        </div>
+     <div class="video-info-grid"> 
+         <div>
+      <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+      </div> 
+    <div>
+     <p class="vid-title">
+      Talking Tech and AI with Google CEO Sundar Pichai! 
+     </p>
+    <p class="vid-author">
+     Marques Brownlee
+    </p> 
+    <p class="vid-stats">
+     3.4 Views &#183; 6 months 
+    </p>
+ </div>
+ </div>
+ </div>
+
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
+     <div>
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
+     </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
+     </div>
+  </div>
+ </div>
+</div>
+</body>
+ </html>
+
+ 
