@@ -262,37 +262,116 @@
     <head>
         <title></title>
         <style>
-          .img-one{
-            height: 150px;
-            width:100%
+          .profile{
+            display: inline-block;
           }
-          .one{
-            box-shadow: 0px 0px 8px grey;
+          .img-one{
+            
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: top;
+          }
+          
+          .name{
+            font-weight: bold;
+            margin-top: 5px;
+          }
+          .mut-friend{
+            width:30px;
+            border-radius: 18px;
+          }
+          .para
+          {
+            width: 100%;
+            margin-top: 5px;
+          }
+          .maindiv
+          {
+          display: grid;
+          grid-template-columns: 150px 150px 150px;
+          margin-top: 30px;
+          column-gap: 25px;
+          margin-left: 10px;
+          }
+          .mutual
+          {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            margin-top: 0px;
+          }
+          .add{
+          background-color: rgb(39, 48, 223);
+          color: aliceblue;
+          margin-left: 5px;
           }
         </style>
     </head>
      <body>
-      <div style="
-      display: grid;
-      grid-template-columns: 150px 150px 150px;
-      margin-top: 30px;
-      column-gap: 20px;
-      margin-left: 10px;
-      ">
-   <div class="one">
-    <img class="img-one" src="thumbnails/images.jpg">
-    <p>Oliver</p>
-    <p>2 mutual friends</p>
-    <button>Add Friend</button>
-   </div>
+      <div class="maindiv">
+            <div style="box-shadow: 0px 0px 8px grey;">
+      <div class="profile">
+            <img class="img-one" src="thumbnails/images.jpg">
+      </div>
+      <div>
+            <p class="name">Oliver</p>
+      </div>
+      <div class="mutual">
+          <div>
+            <img class="mut-friend" src="thumbnails/6_Image.jpg">
+          </div>
+          <div>
+            <p class="para">2 mutual friends</p>
+          </div>
+      </div>
+      <div>
+            <button class="add">Add Friend</button>
+      </div>
 
- <div style="background-color:lightpink;">
- </div>
- <div style="background-color: 
- lightblue;"> 
- </div>
-
- </div>
   </div>
+ <div style="
+ box-shadow: 0px 0px 8px grey;">
+ 
+ <div class="profile">
+  <img class="img-one" src="thumbnails/cat2.jpg">
+</div>
+<div>
+  <p class="name">kiwi</p>
+</div>
+<div class="mutual">
+<div>
+  <img class="mut-friend" src="thumbnails/6_Image.jpg">
+</div>
+<div>
+  <p class="para">2 mutual friends</p>
+</div>
+</div>
+<div>
+  <button class="add">Add Friend</button>
+</div>
+ </div>
+ <div style="box-shadow: 0px 0px 8px grey;"> 
+
+<div class="profile">
+  <img class="img-one" src="thumbnails/cat3.jpg">
+</div>
+<div>
+  <p class="name">Mimi</p>
+</div>
+<div class="mutual">
+<div>
+  <img class="mut-friend" src="thumbnails/6_Image.jpg">
+</div>
+<div>
+  <p class="para">2 mutual friends</p>
+</div>
+</div>
+<div>
+  <button class="add">Add Friend</button>
+</div>
+ </div>
+
+ </div>
+  
      </body>
 </html>
