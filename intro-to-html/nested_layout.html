@@ -9,7 +9,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }.root{
-    border-style: solid;
+   
     display: inline-block;
     border-width: 1px;
   }
@@ -19,8 +19,10 @@ vertical-align: middle;
   }
   .channel-pic{
     width: 50px;
-    border-radius: 25px;
+    border-radius: 30px;
+    height: 55px;
    margin-top: 20px;
+   vertical-align: middle;
   }
   .prof-info{
    vertical-align: middle;
@@ -59,9 +61,24 @@ vertical-align: middle;
      padding-right: 12px;
      border-radius: 5px;
 }
+.main-one{
+  display: block;
+  margin-bottom: 10px;
+}
+.main-two{
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.main-three{
+  display: block;
+}
+
 </style>
 </head>
 <body>
+  <div class="main-one">
+  </div>
     <div class="root">
       <div class="profile-pic">
         <img  class="channel-pic" src="thumbnails/cat.jpg">
@@ -73,7 +90,37 @@ vertical-align: middle;
      </div>
      <div class="fol-button">
       <button class="fol">Follow</button>
-     </div>
+     </div>     
+</div>
+<div class="main-two">
+  <div class="root">
+    <div class="profile-pic">
+      <img  class="channel-pic" src="thumbnails/images.jpg">
+    </div>
+   <div class="prof-info">
+  <p class="par-one">Rex</p>
+   <p class="par-two">Happy Dog</p>
+   <p class="par-three">Popular</p>
+   </div>
+   <div class="fol-button">
+    <button class="fol">Follow</button>
+   </div>     
+  </div>
+</div>
+<div class="main-three">
+  <div class="root">
+    <div class="profile-pic">
+      <img  class="channel-pic" src="thumbnails/cat3.jpg">
+    </div>
+   <div class="prof-info">
+  <p class="par-one">Mimi</p>
+   <p class="par-two">Sleepy cat</p>
+   <p class="par-three">Popular</p>
+   </div>
+   <div class="fol-button">
+    <button class="fol">Follow</button>
+   </div>     
+  </div>
 </div>
 </body>
 </html>
