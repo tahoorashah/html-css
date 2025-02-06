@@ -2,10 +2,17 @@
 <html>
     <head>
         <title>flexbox prac</title>
-        <style>
-            
-        </style>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- links for youtube exercise -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
     </head>
+    <!-- general flexbox exercise -->
     <body style="padding-bottom: 2000px;">
         <div style="
             display: flex;
@@ -100,32 +107,65 @@
        lightblue; width:100px; margin-right:500px" >item1</div>
       <div style="background-color:
        lightpink; width:100px;">item2</div>
+  </div> 
+  
+  
 
-  </div>  
-    </body>
-</html>
+<!-- 12g exrcise flexbox header -->
+ 
+    <style>
+    .full{
+    height:55px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: rgb(150, 71, 150);
+    align-items:center;
+}
+        .left{
+        width:300px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .middle{
+        background-color:lightgrey;
+        flex:1;
+        margin-left:50px;
+        margin-right: 35px;
+        max-width:500px;
+    }
+    .search{
+        height: 30px;
+        width: 350px;
+        border-radius: 15px;
+    }
+    .right{
+        width:300px; 
+        height: 40px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
 
-<!Doctype html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-<html>
-<head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     </style>
+<div class="full">
+    <div class="left"> Home</div>
+    <div class="mid">
+        <input class=search type="text-box" placeholder="search">
+    </div>
+    <div class="right"> 
+        <button class="click">Download</button>
+    </div>
+</div>
+  </div>
 
 
-    <link rel="stylesheet" href="../styles/video.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/general.css">
-
- </head>
-    <body>
-        <div class="header ">
-            <div class="left-section">leftsection</div>
+       <!-- youtube -->
+           <div class="header ">
+            <div class="left-section">
+            <img class="hamburger-logo" src="thumbnails/hamburger-menu.svg">
+            <img  class="youtube-logo" src="thumbnails/youtube-logo.svg">
+            </div>
             <div class="middle-section">
                 <input class=search-bar type="text-box" placeholder="search ">
             </div>
@@ -247,15 +287,9 @@
   </div>
  </div>
 </div>
-</body>
- </html>
 
- <!Doctype html>
- <html>
-    <head>
-        
-    </head>
-    <body>
+
+
     <div style="
         border-width: 1px;
         border-style: solid;
