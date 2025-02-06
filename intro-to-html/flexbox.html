@@ -82,6 +82,26 @@
           <div style="background-color:
           lightblue; width:100px;">100px </div>
      </div>  
+
+     <div style="
+     margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      border-width:4px;
+      border-style: solid;
+      border-color: gray;
+      justify-content:space-between;
+      align-items:center;
+     margin-bottom: 10px;
+      ">
+      
+      <div style="background-color:
+       lightblue; width:100px; margin-right:500px" >item1</div>
+      <div style="background-color:
+       lightpink; width:100px;">item2</div>
+
+  </div>  
     </body>
 </html>
 
@@ -92,61 +112,24 @@
     </head>
     <body>
 <html>
-    <head>
-        <title></title>
-        <style>
-            p{
-           font-family:Roboto,arial;
-         }  
-       .search-bar{
-           font-family: times;
-           font-size: 18px;
-           margin-left: 12px;
-           margin-bottom: 10px;
-           display: block;
-           margin-top: 50px;
-       }
-           .thumb-new{
-           width: 100%;
-           }
-           .video-info-grid{
-              display: grid;
-              grid-template-columns: 50px 1fr;
-           }
-          .channel-pic{
-           width: 100%;
-           border-radius: 30px;
-          }
-          
-           .vid-title{
-               margin-top: 0px;
-               font-size: 14px;
-               font-weight: bold;
-               width:270px;
-               line-height: 18px;
-           }
-           .vid-author{
-               font-size: 13px;
-               color:rgb(96, 96, 96);
-               margin-bottom: 0;
-           }
-           .vid-stats{
-               font-size: 13px;
-               color:rgb(96, 96, 96);
-               margin-top: 4px;
-           }
-           .video-grid{
-             display: grid;
-             grid-template-columns: 1fr 1fr 1fr;
-             column-gap: 15px ;
-             row-gap:40px;
-           }
-           
-         </style>
-    </head>
+<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/video.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/general.css">
+
+ </head>
     <body>
         <div class="header ">
-        <input class=search-bar type="text-box" placeholder="search ">
+            <div class="left-section">leftsection</div>
+            <div class="middle-section">
+                <input class=search-bar type="text-box" placeholder="search ">
+            </div>
+            <div class="right-section ">rightsection</div>
         </div>
       <div class="video-grid">
 
@@ -265,6 +248,69 @@
  </div>
 </div>
 </body>
+ </html>
+
+ <!Doctype html>
+ <html>
+    <head>
+        
+    </head>
+    <body>
+    <div style="
+        border-width: 1px;
+        border-style: solid;
+        max-width: 400px;
+        margin-left: 10px;
+        border-radius: 8px;
+
+        ">
+        <div style="
+        
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        
+
+            ">
+            <div class="list" style="font-size: 20px; font-weight: bold; ">Home</div>
+            <div class="list-output" style="background-color:blue; color: white; border-radius: 20px;  padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">14</div>
+        </div>
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+            ">
+            <div class="list" style="font-size: 20px; font-weight: bold;">Notifications </div>
+            <div class="list-output" style="background-color:blue; color: white; border-radius: 20px;  padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">3</div>
+    </div>
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+            ">
+            <div class="list" style="font-size: 20px; font-weight: bold;">Messages </div>
+            <div class="list-output" style="background-color:blue; color: white; border-radius: 20px;  padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">5</div>
+    </div>
+</div>
+    </body>
  </html>
 
  
