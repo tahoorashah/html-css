@@ -5,210 +5,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
 
-    <style>
-      p{
-        font-family:Roboto,arial;
-      }  
-    .search-bar{
-        font-family: times;
-        font-size: 18px;
-        margin-left: 12px;
-        margin-bottom: 10px;
-        display: block;
-        margin-top: 0px;
-    }
-    .thumb{
-        object-fit: cover;
-        width: 300px;
-        vertical-align: top;
-        height: 199px;
-           }
-    
-        .line-one{
-            margin-left: 0px;
-            width: 200px;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 8px;
-            display: inline-block;
-        }
-        .line-two{
-            margin-left: 42px;
-            margin-bottom: 0px;
-            color: rgb(113, 110, 110);
-            font-family: arial;
-            font-size: 13px;
-            margin-top: 0;
-        }
-        .line-three{
-            margin-top:5px;
-            margin-left: 42px;
-            color: rgb(113, 110, 110);
-            font-family: arial;
-            font-size: 13px;
-        }
-        .image{
-            margin-top: 8px;
-            width:36px;
-            margin-left: 5px;
-            margin-bottom: 0px;
-            border-radius: 18px;
-            height: 36px;
-        }
-        .main{
-           
-            display: inline-block;
-            width:300px;
-            vertical-align: top;
-            cursor: pointer;
-        }
-        .main-two{
-            display: inline-block;
-            width: 300px;
-            vertical-align: top;
-            margin-left: 8px;
-            cursor: pointer;
-        }
-        .thumb-two{
-           height: 199px;
-           margin-bottom: 0;
-        }
-        .first{
-            width: 250px;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 8px;
-            margin-bottom: 16px;
-            margin-left :5px;
-            display: inline-block;
-        }
-        .second{
-            margin-left: 48px;
-            margin-bottom: 0px;
-            color: rgb(113, 110, 110);
-            font-family: arial;
-            font-size: 13px;
-            margin-top: 0;
-        }
-        .third{
-            margin-top:5px;
-            margin-left: 48px;
-            color: rgb(113, 110, 110);
-            font-family: arial;
-            font-size: 13px;
-        }
-        .image-two{
-            width:36px;
-            border-radius: 18px;
-            margin-top: 4px;
-            margin-left: 3px;
-            display: inline-block;
-        
-        }
-        .vid-preview{
-            display: inline-block;
-            margin-left: 0px;
-            vertical-align: top;
-        }
-        .thumb-new{
-        object-fit: cover;
-        width: 300px;
-        height: 199px;
-        }
-        .video-info-grid{
-           display: grid;
-           grid-template-columns: 50px 1fr;
-        }
-       .channel-pic{
-        width: 100%;
-        border-radius: 30px;
-       }
-       
-        .vid-title{
-            margin-top: 0px;
-            font-size: 14px;
-            font-weight: bold;
-            width:270px;
-            line-height: 18px;
-        }
-        .vid-author{
-            font-size: 13px;
-            color:rgb(96, 96, 96);
-            margin-bottom: 0;
-        }
-        .vid-stats{
-            font-size: 13px;
-            color:rgb(96, 96, 96);
-            margin-top: 4px;
-        }
-        
-    </style>
 </head>
 <body>
-    <input class=search-bar type="text-box" placeholder="search ">
-    <div class="main">
-       
-    <img class="thumb" src="thumbnails/thumbnail-8.webp">
-    
-    <img class="image" src="thumbnails/channel-8.jpeg">
+        <div class="header ">
+            <div class="left-section">
+            <img class="hamburger-logo" src="thumbnails/hamburger-menu.svg">
+            <img  class="youtube-logo" src="thumbnails/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class=search-bar type="text-box" placeholder="Search">
+                <button>
+                    <img class="search-logo" src="thumbnails/search.svg">
+                </button>
+                <button>
+                    <img class="voice-logo" src="thumbnails/voice-search-icon.svg">
+                </button>
+            </div>
+            <div class="right-section ">rightsection</div>
+        </div>
+      <div class="video-grid">
 
-    <p class="line-one">Inside The World's Biggest Passenger Plane</p>
-    <p class="line-two">Tech Vision</p>
-    <p class="line-three">3.7M views &#183 10 months ago</p>
-    </div>
-    <div class="main-two">
-        <img class="thumb-two" src="thumbnails/water.jpg">
-        <img class="image-two" src="thumbnails/channel-12.jpeg">
-        <p class="first">
-            What would happen if you didn’t drink water? - Mia Nacamulli
-       </p>
-       <p class="second">
-        TED-Ed
-       </p>
-       <p class="third">
-        12M views &#183 5 years ago
-       </p>
-    </div>
-    
         <div class="vid-preview">
-           <div >
-             <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
-           </div>
-        <div class="video-info-grid"> 
+          <div>
+       <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+          </div>
+      <div class="video-info-grid"> 
             <div>
-         <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
-         </div> 
-       <div>
-        <p class="vid-title">
-         Talking Tech and AI with Google CEO Sundar Pichai! 
-        </p>
-       <p class="vid-author">
-        Marques Brownlee
-       </p> 
-       <p class="vid-stats">
-        3.4 Views &#183; 6 months 
-       </p>
-    </div>
-    </div>
-    </div>
+                <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+            </div> 
+          <div>
+            <p class="vid-title">
+            Talking Tech and AI with Google CEO Sundar Pichai! 
+            </p>
+            <p class="vid-author">
+            Marques Brownlee
+            </p> 
+            <p class="vid-stats">
+            3.4 Views &#183; 6 months 
+            </p>
+          </div>
+      </div>
+      </div>
 
-    <div class="vid-preview">
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
      <div>
-        <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
      </div>
-     <div class="video-info-grid">
-        <div>
-            <img class="channel-pic" src="thumbnails//channel-d.jpeg">
-        </div>
-        <div>
-            <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
-            <p class="vid-author">Destination Tips</p>
-            <p class="vid-stats">3M views &#183; 1 year ago</p>
-        </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
      </div>
-    </div>
-</body>
-</html> 
+  </div>
+ </div>
+    
+      <div class="vid-preview">
+        <div >
+          <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+        </div>
+     <div class="video-info-grid"> 
+         <div>
+      <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+      </div> 
+    <div>
+     <p class="vid-title">
+      Talking Tech and AI with Google CEO Sundar Pichai! 
+     </p>
+    <p class="vid-author">
+     Marques Brownlee
+    </p> 
+    <p class="vid-stats">
+     3.4 Views &#183; 6 months 
+    </p>
+ </div>
+ </div>
+ </div>
+
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
+     <div>
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
+     </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
+     </div>
+  </div>
+ </div>
+    
+      <div class="vid-preview">
+        <div >
+          <img class="thumb-new" src="thumbnails/thumbnail-1.webp"> 
+        </div>
+     <div class="video-info-grid"> 
+         <div>
+      <img  class="channel-pic" src="thumbnails/channel-1.jpeg">  
+      </div> 
+    <div>
+     <p class="vid-title">
+      Talking Tech and AI with Google CEO Sundar Pichai! 
+     </p>
+    <p class="vid-author">
+     Marques Brownlee
+    </p> 
+    <p class="vid-stats">
+     3.4 Views &#183; 6 months 
+    </p>
+ </div>
+ </div>
+ </div>
+
+ <div class="vid-preview">
+  <div>
+     <img class="thumb-new" src="thumbnails/thumbnail-11.webp"> 
+  </div>
+  <div class="video-info-grid">
+     <div>
+         <img class="channel-pic" src="thumbnails//channel-d.jpeg">
+     </div>
+     <div>
+         <p class="vid-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+         <p class="vid-author">Destination Tips</p>
+         <p class="vid-stats">3M views &#183; 1 year ago</p>
+     </div>
+  </div>
+ </div>
+</div>
+       
