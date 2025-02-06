@@ -8,10 +8,12 @@
    .channel-pic{
     width: 100%;
     border-radius: 30px;
+    width: 36px;
+    margin-top: 8px;
    }
    
     .vid-title{
-        margin-top: 0px;
+        margin-top: 10px;
         font-size: 14px;
         font-weight: bold;
         width:270px;
