@@ -1,0 +1,10 @@
+.side-layout{
+     position: fixed;
+     top: 55px;
+     bottom: 0px;
+     left: 0px;
+     width: 75px;
+     background-color:white;
+
+
+}
