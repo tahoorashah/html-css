@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css_position prac-2</title>
+        <style>
+            .one-img{
+                margin-top: 15px;
+                width: 60px;
+                height: 60px;
+                border-radius: 40px;
+                object-position: top;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .two-img{
+                width: 60px;
+                height: 50px;
+                border-radius: 40px;
+                object-position: top;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .three-img{
+                width: 60px;
+                height: 50px;
+                border-radius: 40px;
+                object-position: top;
+                display: block;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 3000px;">
+     <div class="full-flex" style="background-color: rgb(160, 206, 206);
+     display: flex;
+     height: 1000px;
+     grid-template-columns:30px 50px ;
+     
+     ">
+        <div class="col-1" style="background-color: black;
+        display: flex
+        position:fixed;
+        position: fixed;
+       top: 0px;
+       left: 0px;
+       bottom: 0px;
+       width: 100px;
+        ">
+      <img class="one-img" src="thumbnails/cat3.jpg"> 
+      <img class="two-img" src="thumbnails/cat2.jpg"> 
+      <img class="three-img" src="thumbnails/water.jpg">
+        </div>
+       <div class="col-2" style="
+       background-color:rgb(50, 49, 49);
+       width: 180px;
+       position: fixed;
+       top: 0px;
+       left: 100px;
+       bottom: 0px;
+       ">
+         <p style="color: aliceblue; margin-left: 15px; display: inline-block;">INFO</p>
+         <p style="color: white; margin-left: 100px; display: inline-block;">&#43</p>
+         <p style="color: aliceblue; margin-left: 15px;">#  New-videos</p>
+         <p style="color: aliceblue; margin-left: 15px;">#  updates</p>
+         <p style="color: aliceblue; margin-left: 15px;">#  faq</p>
+
+       </div>
+     </div>
+    </body>
+</html>
