@@ -1,7 +1,13 @@
+    .thumbnail-row{
+    cursor: pointer;  
+      position: relative ;
+      
+    }
     .thumb-new{
     width: 100%;
     }
     .video-info-grid{
+        cursor: pointer;
        display: grid;
        grid-template-columns: 50px 1fr;
     }
@@ -10,6 +16,7 @@
     border-radius: 30px;
     width: 36px;
     margin-top: 8px;
+   
    }
    
     .vid-title{
@@ -35,4 +42,18 @@
       column-gap: 15px ;
       row-gap:40px;
     }
-    
+        .video-time{
+    font-family: Arial;
+    font-style: 12px;
+    font-weight: 500px;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+     right: 8px;
+     padding-left: 4px;
+     padding-right:   4px;
+     padding-top: 4px;
+     padding-bottom: 4px;
+     border-radius: 5px;
+    }

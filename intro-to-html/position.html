@@ -14,6 +14,7 @@
         left:0px;
         right:0px;
         height: 50px;
+        z-index: 1;
              "> header</div>
 
        <div class="side-lay" style="
@@ -24,7 +25,18 @@
             left: 0;
             bottom: 0px;
             width: 72px;">
+            
         sidebar
+        <div style="
+            position: absolute;
+            background-color:red;
+            color:#fff;
+            top: 0px;
+            right: 0px;
+             
+            ">
+            
+            X</div>
        </div>
        <div class="s-lay" style="
        background: green;
@@ -43,7 +55,9 @@
        background-color:red;
        color:#fff;
        top: 30px;
-       right: 10px;">
+       right: 10px;
+       z-index:2 ;
+       ">
        
        absolute</div>
      <div style="background-color: lightcoral;
@@ -55,8 +69,18 @@
            </div>
       <div style="background-color: lightskyblue;
            width: 200px;
-           height: 200px; ">
+           height: 200px; 
+           position: relative;">
            div2
+           <div style="
+       position: absolute;
+       background-color:black;
+       color:#fff;
+       bottom:10px;
+       right: 10px;
+       
+       ">
+       5:00</div>
             </div>
     </body>
 </html>
