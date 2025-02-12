@@ -3,8 +3,12 @@ p{
   }  
   body{
      margin: 0px;
+     
      /* css position style */
      padding-top:80px;
+    
      /* side-layout style */
-     padding-left: 80px;
+     padding-left: 100px;
+     padding-right: 30px;
+     background-color: rgb(244, 243, 243);
   }

@@ -5,6 +5,28 @@
      left: 0px;
      width: 75px;
      background-color:white;
+     z-index:200 ;
+     padding-top: 5px;
+}
+.sidebar-link{
+     height: 80px;
+     /* for vertical alignment  */
+     display: flex;
+     justify-content: center;
+/* align item center will target logo name */
+     align-items: center;
+     flex-direction: column;
+     cursor: pointer;
 
-
+}
+.sidebar-link:hover{
+     background-color: lightgray;
+}
+.sidebar-link img{
+      height: 24px;
+      margin-bottom: 4px; 
+}
+.sidebar-link div{
+     font-family: Roboto,arial;
+     font-size: 10px;
 }
