@@ -22,11 +22,13 @@
 }
 .hamburger-logo{
     height: 24px;
+    cursor: pointer;
 }
 .youtube-logo{
     height: 20px;
     margin-left: 24px;
     margin-right: 24px;
+    cursor: pointer;
 }
 .middle-section{
     flex:1;
@@ -54,10 +56,12 @@
     font-size: 16px;
     padding-left:10px ;
 }
-.search-button , .voice-button{
+.search-button , 
+.voice-button 
+{cursor: pointer;
     height: 40px;
     width:60px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(251, 248, 248);
     border-width: 1px;
     border-style: solid;
     border-color: rgb(192,192,192);
@@ -69,11 +73,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.upload-icon-container{
+    cursor: pointer;;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-container{
+    cursor: pointer;;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notification-logo-container{
+    cursor: pointer;;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* tool-tip css */
 .search-button .tool-tip,
-.voice-button .tool-tip{
+.voice-button .tool-tip,
+.upload-icon-container .tool-tip,
+.app-container .tool-tip,
+.notification-logo-container .tool-tip{
+    font-family: Roboto,arial;
     position: absolute;
     background-color:gray;
     color: #fff;
@@ -91,7 +119,10 @@
 }
   /* tool-tip css */
   .search-button:hover .tool-tip,
-  .voice-button:hover .tool-tip{
+  .voice-button:hover .tool-tip,
+  .upload-icon-container:hover .tool-tip,
+  .app-container:hover .tool-tip,
+  .notification-logo-container:hover .tool-tip{
     opacity: 1;
   }
 .search-logo{
@@ -119,6 +150,7 @@
 }
 .upload-logo{
     height: 24px; 
+    
 }
 .app-logo{
     height: 24px;
@@ -147,4 +179,5 @@
 .channel-logo{
     height: 32px;
     border-radius:16px;
+    cursor: pointer;;
 }

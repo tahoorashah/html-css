@@ -2,10 +2,13 @@
     cursor: pointer;  
       position: relative ;
       margin-bottom: 3px;
+      margin-right: -18px;
       
     }
     .thumb-new{
-    width: 95%;
+    width: 93%;
+ 
+    
     }
     .video-info-grid{
         cursor: pointer;
@@ -29,6 +32,12 @@
         margin-left: -8px;
         margin-bottom: 3px;
     }
+    @media(min-width:1000px){
+      .vid-title{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
     .vid-author{
         font-size: 13px;
         color:rgb(96, 96, 96);
@@ -44,7 +53,31 @@
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 15px ;
       row-gap:40px;
+    
+      /* inheritance */
+      /* text-decoration: underline; */
+      /* border:2px solid red; */
     }
+    /* responsive design */
+    @media (max-width:750px) {
+      
+      .video-grid{
+        grid-template-columns: 1fr 1fr; 
+      }
+    }
+
+    @media (min-width:751px) and (max-width:999px){
+      .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+     
+    @media(min-width:1000px) {
+      .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+   
         .video-time{
     font-family: Arial;
     font-style: 12px;
@@ -53,10 +86,54 @@
     color: aliceblue;
     position: absolute;
     bottom: 10px;
-     right: 20px;
+     right: 30px;
      padding-left: 4px;
      padding-right:   4px;
      padding-top: 4px;
      padding-bottom: 4px;
      border-radius: 5px;
     }
+    .channel-pic-container{
+        position: relative;
+        display: inline-block;
+    }
+    .tool_tip{
+      background-color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        width: 200px;
+        padding: 12px 12px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        position: absolute;
+         
+        border-color: black;
+        box-shadow: 5px 5px 5px black;
+        opacity: 0;
+        transition: 0.15s;
+        pointer-events: none;
+    }
+    .channel-pic-container:hover .tool_tip {
+        opacity: 1;
+      }
+      .row1{
+        font-weight: bold;
+        font-family: Roboto;
+        font-size: 15px;
+        position: absolute;
+        left: 50px;
+        bottom: 30px;
+      }
+      .row2{
+        font-size: 13px;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+      }
+      .video-title-link {
+        text-decoration: none;
+        color: black;
+      }
+  
